@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content=IE=edge>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Inspire Registration</title>
+    <link rel="icon" type="image/x-icon" href="/web_statis/images/logouts.jpg">
+    <link rel="stylesheet" href="greeninspire2.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'/> 
+</head>
+<body>
+
+<!--Header-->
+<header>
+<!--navigasi-->
+    <nav class="nav container">
+    <!--logo-->
+    <div class="logo">
+  <img src="/web_statis/images/logouts.jpg" alt="Green Inspire Logo" width="32" height="32">
+  <span>Green Inspire</span>
+</div>
+
+    <!--navbar-->
+    <div class="navbar">
+        <li><a href="http://localhost/web_statis/greeninspire1.html" class="nav-link">Home</a></li>
+    <li class="dropdown">
+    <a href="#" class="nav-link dropdown-toggle">About<i class='bx bxs-chevron-down'></i></a>
+    <ul class="dropdown-menu">
+        <li><a href="http://localhost/web_statis/profil1.html" class="dropdown-item">Profile</a></li>
+        <li><a href="http://localhost/web_statis/story.html" class="dropdown-item">Our Story</a></li>
+        <li><a href="http://localhost/web_statis/team.html" class="dropdown-item">Our Team</a></li>
+    </ul>
+    </li>
+        <li><a href="http://localhost/web_statis/gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="http://localhost/web_statis/registrasi.html" class="nav-link">Registration</a></li>
+        <li><a href="http://localhost/web_statis/kontak.html" class="nav-link">Contact</a></li>
+    </div>
+
+<!-- Menu Icon -->
+<div class="menu-icon">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+</div>
+</header>
+
+<!--Home-->
+<section class="home section" id="home"; style=" background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url('tanamanrumah.jpg'); background-repeat: no-repeat; background-size: cover">
+<div class="home-data container">
+    <!--home text-->
+    <div class="home-text">
+        <h3>Bringing Nature Home</h3>
+        <h2>Pilih paket layanan<br/>Yang Sesuai<br/>Dengan Kebutuhan Anda</h2>
+    <div class="home-btns">
+        <a href="http://localhost/web_statis/gallery.html" class="explore-btn btn">Explore</a>
+    </div>
+    <!--Home Image-->
+    <div class="home-img">
+        <img src="/web_statis/images/bgform.jpg" alt="">
+    </div>
+
+    <!--Contact Info-->
+    <div class="penawaran-info">
+        <div class="penawaran-info-box">
+        <i class='bx bxs-user-voice'></i>
+        <span>Konsultasi Gratis</span>
+    </div>
+    <div class="penawaran-info">
+        <div class="penawaran-info-box">
+        <i class='bx bxs-leaf' ></i>
+        <span>Jual Tanaman Hias Berkualitas Terbaik</span>
+    </div>
+    </div>
+    <div class="penawaran-info">
+        <div class="penawaran-info-box">
+        <i class='bx bx-happy-heart-eyes'></i>
+        <span>Tips & Trik Perawatan</span>
+        </div>
+        </div>
+        </div>
+    </div>
+
+<!--2nd Home Image For Make Mobile Responsive-->
+<div class="home-bg">
+    <img src="/web_statis/images/bgform.jpg" alt="">
+    </div> 
+</section>
+</header>
+ <div class="container">
+ 	<section>
+        <div class="form-container">
+
+            <form id="registrationForm">
+                <!-- Package Selection -->
+                <div class="package-options">
+                    <div class="package-option" data-package="basic">
+                        <h3>Basic Care</h3>
+                        <p>Konsultasi dan perawatan dasar untuk 2 tanaman</p>
+                        <p><strong>Rp 299.000/bulan</strong></p>
+                    </div>
+                    <div class="package-option" data-package="premium">
+                        <h3>Premium Care</h3>
+                        <p>Perawatan lengkap untuk 5 tanaman</p>
+                        <p><strong>Rp 599.000/bulan</strong></p>
+                    </div>
+                    <div class="package-option" data-package="ultimate">
+                        <h3>Ultimate Care</h3>
+                        <p>Perawatan total untuk 10 tanaman</p>
+                        <p><strong>Rp 999.000/bulan</strong></p>
+                    </div>
+                </div>
+
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-input" id="fullName" required>
+                    <div class="error-message" id="nameError">Nama lengkap harus diisi</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" id="email" required>
+                    <div class="error-message" id="emailError">Format email tidak valid</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Nomor Telepon</label>
+                    <input type="tel" class="form-input" id="phone" required>
+                    <div class="error-message" id="phoneError">Nomor telepon tidak valid</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Alamat</label>
+                    <textarea class="form-input" id="address" rows="3" required></textarea>
+                    <div class="error-message" id="addressError">Alamat harus diisi</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Jadwal Kunjungan</label>
+                    <select class="form-select" id="schedule" required>
+                        <option value="">Pilih jadwal</option>
+                        <option value="morning">Pagi (08.00 - 11.00)</option>
+                        <option value="afternoon">Siang (13.00 - 16.00)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <span class="checkbox-label">Saya setuju dengan syarat dan ketentuan yang berlaku</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Daftar Sekarang</button>
+            </form>
+        </div>
+        </section>
+    </div>
+<footer>
+    <div class="footer">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email : apriliaputri07350@gmail.com<br>Phone: +62 895611133500<br>Address: Jl.Parakan, Pamulang 2, Tangerang Selatan</p>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 Green Inspire - Aprilia Putri. All rights reserved</p>
+    </div>
+</footer>
+<script src="menu.js"></script>
+</body>
+</html>
